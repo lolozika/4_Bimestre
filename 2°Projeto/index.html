@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loloteca Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+
+                <h1><i class="fas fa-book">Lolo</i>teca Online</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Pesquise um livro..." onkeyup="searchBooks(event)">
+                <button id="searchButton" onclick="searchBooks()">Search</button>
+            </div>
+        </header>
+
+        <!-- Carrossel de Livros -->
+        <section class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item" data-title="O Senhor dos Anéis">
+                    <img src="https://m.media-amazon.com/images/I/51M9IbBqxCL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Senhor dos Anéis">
+                    <p>A Culpa é das Estrelas </p>
+                </div>
+                <div class="carousel-item" data-title="Harry Potter e a Pedra Filosofal">
+                    <img src="https://m.media-amazon.com/images/I/91+1SUO3vUL.jpg" alt="Harry Potter">
+                    <p>A Guerra dos Tronos </p>
+                </div>
+                <div class="carousel-item" data-title="O Código Da Vinci">
+                    <img src="https://m.media-amazon.com/images/I/817esPahlrL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Código Da Vinci">
+                    <p>Cem Anos de Solidão</p>
+                </div>
+                <div class="carousel-item" data-title="A Menina que Roubava Livros">
+                    <img src="https://m.media-amazon.com/images/I/91M9xPIf10L._AC_UF1000,1000_QL80_.jpg"
+                        alt="A Menina que Roubava Livros">
+                    <p>O Hobbit</p>
+                </div>
+                <div class="carousel-item" data-title="1984">
+                    <img src="https://m.media-amazon.com/images/I/81HWdNr7xEL._UF894,1000_QL80_.jpg" alt="1984">
+                    <p>Matar a Saudade</p>
+                </div>
+                <div class="carousel-item" data-title="O Senhor dos Anéis">
+                    <img src="https://m.media-amazon.com/images/I/81Ph4QRq1gL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Senhor dos Anéis">
+                    <p>O Grande Gatsby</p>
+                </div>
+                <div class="carousel-item" data-title="Harry Potter e a Pedra Filosofal">
+                    <img src="https://m.media-amazon.com/images/I/71Htd-pRYPL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Harry Potter">
+                    <p>O Poderoso Chefão</p>
+                </div>
+                <div class="carousel-item" data-title="O Código Da Vinci">
+                    <img src="https://m.media-amazon.com/images/I/81slUinjTlS._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Código Da Vinci">
+                    <p>O Alquimista</p>
+                </div>
+                <div class="carousel-item" data-title="A Menina que Roubava Livros">
+                    <img src="https://m.media-amazon.com/images/I/91WKPd60P4L.jpg" alt="A Menina que Roubava Livros">
+                    <p>O Sol é Para Todos</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item" data-title="O Senhor dos Anéis">
+                    <img src="https://m.media-amazon.com/images/I/71ZLavBjpRL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Senhor dos Anéis">
+                    <p><strong>O Senhor dos Anéis</strong></p>
+                    <p>Autor: J.R.R. Tolkien</p>
+                    <p>Ano: 1954</p>
+                    <p>Gênero: Fantasia</p>
+                </div>
+                <div class="carousel-item" data-title="Harry Potter e a Pedra Filosofal">
+                    <img src="https://m.media-amazon.com/images/I/81pB+joKL4L._UF894,1000_QL80_.jpg" alt="Harry Potter">
+                    <p><strong>Harry Potter e a Pedra Filosofal</strong></p>
+                    <p>Autor: J.K. Rowling</p>
+                    <p>Ano: 1997</p>
+                    <p>Gênero: Fantasia</p>
+                </div>
+                <div class="carousel-item" data-title="O Código Da Vinci">
+                    <img src="https://m.media-amazon.com/images/I/91QSDmqQdaL._AC_UF894,1000_QL80_.jpg"
+                        alt="O Código Da Vinci">
+                    <p><strong>O Código Da Vinci</strong></p>
+                    <p>Autor: Dan Brown</p>
+                    <p>Ano: 2003</p>
+                    <p>Gênero: Suspense</p>
+                </div>
+                <div class="carousel-item" data-title="A Menina que Roubava Livros">
+                    <img src="https://m.media-amazon.com/images/I/61L+4OBhm-L._AC_UF1000,1000_QL80_.jpg"
+                        alt="A Menina que Roubava Livros">
+                    <p><strong>A Menina que Roubava Livros</strong></p>
+                    <p>Autor: Markus Zusak</p>
+                    <p>Ano: 2005</p>
+                    <p>Gênero: Drama</p>
+                </div>
+                <div class="carousel-item" data-title="1984">
+                    <img src="https://m.media-amazon.com/images/I/819js3EQwbL._AC_UF1000,1000_QL80_.jpg" alt="1984">
+                    <p><strong>1984</strong></p>
+                    <p>Autor: George Orwell</p>
+                    <p>Ano: 1949</p>
+                    <p>Gênero: Distopia</p>
+                </div>
+                <!-- Novos Livros -->
+                <div class="carousel-item" data-title="Dom Quixote">
+                    <img src="https://m.media-amazon.com/images/I/81pdXbEIZhL._UF894,1000_QL80_.jpg" alt="Dom Quixote">
+                    <p><strong>Dom Quixote</strong></p>
+                    <p>Autor: Miguel de Cervantes</p>
+                    <p>Ano: 1605</p>
+                    <p>Gênero: Clássico</p>
+                </div>
+                <div class="carousel-item" data-title="Orgulho e Preconceito">
+                    <img src="https://m.media-amazon.com/images/I/91b0C2YNSrL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Orgulho e Preconceito">
+                    <p><strong>Orgulho e Preconceito</strong></p>
+                    <p>Autor: Jane Austen</p>
+                    <p>Ano: 1813</p>
+                    <p>Gênero: Romance</p>
+                </div>
+                <div class="carousel-item" data-title="O Apanhador no Campo de Centeio">
+                    <img src="https://m.media-amazon.com/images/I/81OthjkJBuL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Apanhador no Campo de Centeio">
+                    <p><strong>O Apanhador no Campo de Centeio</strong></p>
+                    <p>Autor: J.D. Salinger</p>
+                    <p>Ano: 1951</p>
+                    <p>Gênero: Drama</p>
+                </div>
+                <div class="carousel-item" data-title="O Pequeno Príncipe">
+                    <img src="https://m.media-amazon.com/images/I/61G3gB0Z7bL._AC_UF1000,1000_QL80_.jpg"
+                        alt="O Pequeno Príncipe">
+                    <p><strong>O Pequeno Príncipe</strong></p>
+                    <p>Autor: Antoine de Saint-Exupéry</p>
+                    <p>Ano: 1943</p>
+                    <p>Gênero: Infantil</p>
+                </div>
+                <div class="carousel-item" data-title="A Revolução dos Bichos">
+                    <img src="https://m.media-amazon.com/images/I/91BsZhxCRjL._AC_UF1000,1000_QL80_.jpg"
+                        alt="A Revolução dos Bichos">
+                    <p><strong>A Revolução dos Bichos</strong></p>
+                    <p>Autor: George Orwell</p>
+                    <p>Ano: 1945</p>
+                    <p>Gênero: Distopia</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer>
+            <p>&copy; 2024 Biblioteca Online. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
